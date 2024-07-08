@@ -1,0 +1,254 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background: url(../../img/wallpaper/VMC-Starfield-01.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+body__img {
+  height: 100vh;
+  width: 20vw;
+  opacity: 0;
+  z-index: 100;
+  position: absolute;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.header {
+  background: hsla(0, 0%, 100%, 0.07);
+  -webkit-backdrop-filter: blur(125px);
+          backdrop-filter: blur(125px);
+  border: 1px solid #26262c;
+  border-radius: 15px;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  width: 40%;
+  max-width: 1600px;
+  margin: 20px auto 0;
+  padding: 0 10px;
+  font-size: 17px;
+}
+.header .header__start {
+  align-self: center;
+}
+.header .header__menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.header .header__menu li {
+  align-self: center;
+}
+.header .header__menu li:not(:first-child) {
+  text-decoration: none;
+}
+.header .header__menu li:not(:first-child):hover {
+  position: relative;
+}
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.header .header__menu li:not(:first-child):hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  animation: underline 0.3s forwards;
+}
+
+.header__start, .main__start {
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 10px 15px 10px 20px;
+}
+.header__start img, .main__start img {
+  color: white;
+  height: 1cap;
+}
+
+.btn {
+  text-align: center;
+  background-color: #242429;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  box-shadow: 0 0 1px #eee;
+  background-image: linear-gradient(to right, #1f1f24 0%, #27272c 51%, #1f1f24 100%);
+}
+.btn:hover {
+  background-position: right center;
+}
+
+.header__logo {
+  margin-top: 10px;
+  height: 80px;
+  width: 100px;
+}
+
+.main {
+  text-align: center;
+  width: 75vw;
+  margin: 100px auto 0 auto;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.main__content {
+  color: white;
+  font-family: "Inter Tight", sans-serif;
+  font-size: 56px;
+  padding: 100px 15%;
+}
+.main__content__text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #808690;
+}
+.main__gridcontainer {
+  position: absolute;
+  z-index: -1;
+  display: grid;
+  width: 75vw;
+  height: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.main__gridcontainer__item {
+  border: 1px solid #18181b;
+  background-color: #131316;
+}
+.main__gridcontainer__item-active {
+  background-color: #18181b;
+}
+.main__gridcontainer-background {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 75vw;
+  background-color: #131316;
+}
+.main__startButton {
+  margin-top: 75px;
+}
+.main__logo-list {
+  margin-top: 75px;
+}
+.main__logo-list img {
+  width: 300px;
+  height: 250px;
+}
+.main__logo .copyright {
+  font-size: 17px;
+}
+
+body {
+  overflow: visible;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.main__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-auto-flow: dense;
+  gap: 20px;
+  place-content: center center;
+  padding: 50px 50px;
+  width: 75vw;
+}
+.main__content-card {
+  height: 300px;
+  background-color: #29292f;
+  position: relative;
+  box-shadow: 0 5px 15px 0 rgb(41, 42, 47);
+  transition: 0.5s;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.main__content-card:hover {
+  transform: translate(0, -3px);
+  box-shadow: 0 20px 40px 0 rgb(41, 42, 47);
+}
+
+.image {
+  position: relative;
+  top: 5px;
+  width: 100%;
+}
+.image img {
+  width: 97%;
+  border-radius: 20px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title, .dev, .date {
+  padding: 9px;
+  text-align: start;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dev {
+  color: #808690;
+  font-size: 14px;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (max-width: 1125px) {
+  .main {
+    width: 100%;
+  }
+  .main__content {
+    width: 100vw;
+  }
+  .main__gridcontainer {
+    width: 100vw;
+  }
+  .main__gridcontainer-background {
+    width: 100vw;
+  }
+}/*# sourceMappingURL=style.css.map */

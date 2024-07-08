@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "type": "module",
+  "main": "js/script.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "webpack": "^5.92.1"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.1",
+    "webpack-cli": "^5.1.4"
+  }
+}

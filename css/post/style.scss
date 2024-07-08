@@ -1,0 +1,105 @@
+@import '../main/basement.scss';
+@import '../main/header.scss';
+@import '../main/main.scss';
+
+.main__content {
+	padding: 50px 15%;
+	.main__addScript {
+		border: 1px solid gainsboro;
+		&__form {
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			label {
+				font-size: 20px;
+				text-align: left;
+				color: white;
+			}
+			input {
+				border: 1px solid rgba($color: #434343, $alpha: 0.5);
+				height: 40px;
+				font-size: 20px;
+				background: radial-gradient(circle at center, #434343 0%, #000000 100%);
+				color: white;
+				margin-bottom: 20px;	
+				margin-top: 5px;
+			}
+			textarea {
+				border: 1px solid rgba($color: #434343, $alpha: 0.5);
+				resize: none;
+				background: radial-gradient(circle at center, #434343 0%, #000000 100%);
+				color: gray;
+				margin-bottom: 20px;	
+				margin-top: 5px;
+			}
+			button {
+				color: white;
+				font-size: 20px;
+				margin-top: 25px;
+				align-self: center;
+				width: 50%;
+				height: 30px;
+			}
+			#file {
+				height: 50px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
+.header__desktop {
+	display: block;
+}
+.header__menu-mobile {
+	display: none;
+}
+.header__burger {
+	display: none;
+}
+@media (max-width: 1125px) {
+	.header {
+		margin: 0 auto;
+		width: 100vw;
+		border-radius: 0;
+		border: 0;
+		border-bottom: 1px solid #26262c;
+	}
+	.header__desktop {
+		display: none;
+	}
+	.header__menu-mobile {
+		display: block;
+		& svg {
+			fill: white;
+			height: 30px;
+			width: 30px;
+		}
+	}
+	.header__burger-menu {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 10;
+		width: 0px;
+		height: 100vh;
+		width: 0px;
+		transition: all 1s ease;
+	}
+	.header__burger-menu-active {
+		display: block;
+		position: absolute;
+		width: 80vw;
+		z-index: 10;
+		background-color: #1515e8;
+	}
+	.header__burger {
+		z-index: 11;
+		text-align: center;
+		list-style-type: none;
+		font-size: 30px;
+	}
+}

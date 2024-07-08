@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/post/style.css">
+</head>
+<body>
+	<div class="body__img">
+		<div class="wrapper">
+			<header class='header'>
+				<ul class='header__menu header__desktop'>
+					<li><a href="../main.html"><img class='header__logo' src='../img/icons/rbx.png'></a></li>
+					<li class='header__desktop'><a href="about.html">About</a></li>
+					<li class='header__desktop'><a href="contact.html">Contact</a></li>
+				</ul>
+				<ul class="header__menu-mobile">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+						<path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+						</svg>
+				</ul>
+				<button type='button' class="header__startButton btn header__desktop"><a href="posts.html" class="header__start">
+					<span>Get started</span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+				</a></button>
+			</header>
+			<main class='main'>
+				<div class='main__gridcontainer'>
+					<div class="main__gridcontainer-background"></div>
+					<!-- <div class="main__gridcontainer__item"></div> -->
+				</div>
+				<div class='main__content'>
+					<div class='main__content__title'>Please share your script below!</div>
+					<section class="main__addScript">
+						<form method='post' action="" class='main__addScript__form'>
+							<label for="title">Enter your title</label>
+							<input required type="text" name="title" id="title">
+							<label for="dev">Who is developer?</label>
+							<input required type="text" name="dev" id="dev">
+							<label for="script">Enter your script</label>
+							<textarea required name="script" id="script" cols="30" rows="10"></textarea>
+							<label for="file">Upload your image</label>
+							<input type="file" name="file" id="file" accept="image/*">
+							<button type="submit" class="btn header__startButton">Submit</button>
+						</form>
+					</section>
+					<div class="main__logo">
+						<p class="copyright">© 2019-2024 rbxscript</p>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src='../js/dist/post.js'></script>
+</body>
+</html>

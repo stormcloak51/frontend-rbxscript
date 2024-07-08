@@ -1,0 +1,23 @@
+@import 'basement.scss';
+@import 'header.scss';
+@import 'main.scss';
+
+// MEDIA
+
+@media screen and (max-width: 1125px) {
+	body {
+		overflow: scroll;
+	}
+  .main {
+		width: 100%;
+		&__content {
+			width: 100vw;
+		}
+		&__gridcontainer {
+			width: 100vw;
+			&-background {
+				width: 100vw;
+			}
+		}
+	}
+}
